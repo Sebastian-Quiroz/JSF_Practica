@@ -1,4 +1,5 @@
 com\mycompany\holamundojsf\resources\JavaEE8Resource.class
-beans\configuracion\ConfigurationJSF.class
-beans\model\Candidato.class
 com\mycompany\holamundojsf\JAXRSConfiguration.class
+beans\configuracion\ConfigurationJSF.class
+beans\backing\VacanteForms.class
+beans\model\Candidato.class

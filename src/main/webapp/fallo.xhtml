@@ -8,20 +8,15 @@ and open the template in the editor.
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html">
     <head>
-        <title>Hola Mundo JSF</title>
+        <title>Pagina FALLO!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
         <h:form>
-            <table>
-                <tr>
-                    <td><h:outputLabel for="nombre" value="Nombre"></h:outputLabel></td>
-                    <td><h:inputText id="nombre" value="#{candidato.nombre}"></h:inputText></td>
-                    <td><h:message for="nombre"></h:message></td>
-                </tr>
-            </table>
             
-            <h:commandButton action="#{vacanteForms.enviar()}" value="Enviar" />
+            <h1> Lo siento #{candidato.nombre}, no hay vacantes por el momento</h1>
+                <h:commandLink action="index">Regresar</h:commandLink>
+            
         </h:form>
     </body>
 </html>
