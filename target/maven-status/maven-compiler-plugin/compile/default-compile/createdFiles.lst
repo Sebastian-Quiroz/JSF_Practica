@@ -1,0 +1,4 @@
+com\mycompany\holamundojsf\resources\JavaEE8Resource.class
+beans\configuracion\ConfigurationJSF.class
+beans\model\Candidato.class
+com\mycompany\holamundojsf\JAXRSConfiguration.class
