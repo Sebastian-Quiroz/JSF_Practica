@@ -13,7 +13,7 @@
     
     <application>
         <locale-config>
-            <default-locale>en</default-locale>
+            <default-locale>es</default-locale>
         </locale-config>
         <resource-bundle>
             <base-name>mensajes</base-name>
