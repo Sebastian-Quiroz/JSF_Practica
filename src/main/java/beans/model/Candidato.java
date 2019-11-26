@@ -22,6 +22,9 @@ public class Candidato {
     private String nombre, apellido;
     private int salarioDeseado;
     private Date fechaNacimiento;
+    private String codigoPostal;
+    private String colonia;
+    private String ciudad;
 
 
     Logger log = LogManager.getRootLogger();
@@ -66,5 +69,28 @@ public class Candidato {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    
+    public String getCodigoPostal() {
+        return codigoPostal;
+    }
+
+    public void setCodigoPostal(String codigoPostal) {
+        this.codigoPostal = codigoPostal;
+    }
+
+    public String getColonia() {
+        return colonia;
+    }
+
+    public void setColonia(String colonia) {
+        this.colonia = colonia;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
 }
