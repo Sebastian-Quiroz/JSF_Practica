@@ -18,10 +18,15 @@ import org.apache.logging.log4j.Logger;
 @RequestScoped
 public class Candidato {
     
-    private String nombre = "Introduce tu nombre";
+    private String nombre, apellido, salarioDeseado;
     
     Logger log = LogManager.getRootLogger();
-
+    
+    public Candidato(){
+        log.info("Creando el objeto candidato");
+        this.setNombre("Introduciendo el nombre");
+    }
+    
     public String getNombre() {
         return nombre;
     }
@@ -30,6 +35,25 @@ public class Candidato {
         this.nombre = nombre;
         log.info("Modificando la propiedad de nombre: "+this.nombre);
     }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+        log.info("Modificando lapropiedad de apellido: "+this.apellido);
+    }
+
+    public String getSalarioDeseado() {
+        return salarioDeseado;
+    }
+
+    public void setSalarioDeseado(String salarioDeseado) {
+        this.salarioDeseado = salarioDeseado;
+        log.info("Modificando el salario deseado: "+this.salarioDeseado);
+    }
+    
     
     
     
