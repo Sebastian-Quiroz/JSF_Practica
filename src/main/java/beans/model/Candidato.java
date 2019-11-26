@@ -25,6 +25,7 @@ public class Candidato {
     private String codigoPostal;
     private String colonia;
     private String ciudad;
+    private String comentario;
 
 
     Logger log = LogManager.getRootLogger();
@@ -91,6 +92,14 @@ public class Candidato {
 
     public void setCiudad(String ciudad) {
         this.ciudad = ciudad;
+    }
+
+    public String getComentario() {
+        return comentario;
+    }
+
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
     }
 
 }

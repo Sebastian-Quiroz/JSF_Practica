@@ -86,6 +86,34 @@ and open the template in the editor.
                     
             </table>
             
+            <table>
+                <tr>
+                    <td>
+                        <h:commandLink actionListener="#{vacanteForms.ocultarComentario}" immediate="true"
+                                       rendered="#{!vacanteForms.comentarioEnviado}" value="#{msgs['vacanteForm.mostrar']}"/>
+                        
+                        <h:commandLink actionListener="#{vacanteForms.ocultarComentario}" immediate="true"
+                                       rendered="#{vacanteForms.comentarioEnviado}" value="#{msgs['vacanteForm.ocultar']}"/>
+                    </td>
+                </tr>
+            </table>
+            
+            <h:panelGroup rendered="#{vacanteForms.comentarioEnviado}">
+                <table>
+                    <tr>
+                        <td>
+                            <h:outputLabel for="comentario" value="#{msgs['vacanteForm.comentario']}"/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <h:inputTextarea id="comentario" cols="50" rows="10" value="#{candidato.comentario}"/>
+                        </td>
+                    </tr>
+                </table>
+            </h:panelGroup>
+            
             <h:commandButton action="#{vacanteForms.enviar()}" value="#{msgs['vacanteForm.enviar']}" />
         </h:form>
     </body>
