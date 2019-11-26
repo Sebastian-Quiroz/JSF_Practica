@@ -14,6 +14,9 @@ and open the template in the editor.
     </head>
     <body>
         <h:form>
+            
+            <h:messages globalOnly="true"></h:messages>
+            
             <table>
                 
                 <tr>
@@ -46,6 +49,14 @@ and open the template in the editor.
                         </h:inputText>
                     </td>
                     <td><h:message for="salarioDeseado"></h:message></td>
+                </tr>
+                
+                <tr>
+                    <td><h:outputLabel for="fechaNacimiento" value="Fecha de Nacimiento (30/12/1996): "></h:outputLabel></td>
+                    <td><h:inputText id="fechaNacimiento" required="true" value="#{candidato.fechaNacimiento}">
+                            <f:convertDateTime pattern="dd/MM/yyyy"/>
+                        </h:inputText>
+                    </td>
                 </tr>
                     
             </table>
