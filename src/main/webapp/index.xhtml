@@ -21,7 +21,7 @@ and open the template in the editor.
                 
                 <tr>
                     <td>
-                        <h:outputLabel for="nombre" value="Nombre:"></h:outputLabel>
+                        <h:outputLabel for="nombre" value="#{msgs['vacanteForm.nombre']}:"></h:outputLabel>
                     </td>
                     <td>
                         <h:inputText id="nombre" required="true" value="#{candidato.nombre}"></h:inputText>
@@ -33,7 +33,7 @@ and open the template in the editor.
                 
                 <tr>
                     <td>
-                        <h:outputLabel for="apellido" value="Apellido:"></h:outputLabel>
+                        <h:outputLabel for="apellido" value="#{msgs['vacanteForm.apellido']}:"></h:outputLabel>
                     </td>
                     <td>
                         <h:inputText id="apellido" required="true" value="#{candidato.apellido}"></h:inputText>
@@ -42,7 +42,7 @@ and open the template in the editor.
                 </tr>
                 
                 <tr>
-                    <td><h:outputLabel for="salarioDeseado" value="Salario:"></h:outputLabel></td>
+                    <td><h:outputLabel for="salarioDeseado" value="#{msgs['vacanteForm.salarioDeseado']}:"></h:outputLabel></td>
                     <td>
                         <h:inputText id="salarioDeseado" required="true" value="#{candidato.salarioDeseado}">
                             <f:validateLongRange minimum="100" maximum="50000"></f:validateLongRange>
@@ -52,16 +52,17 @@ and open the template in the editor.
                 </tr>
                 
                 <tr>
-                    <td><h:outputLabel for="fechaNacimiento" value="Fecha de Nacimiento (30/12/1996): "></h:outputLabel></td>
+                    <td><h:outputLabel for="fechaNacimiento" value="#{msgs['vacanteForm.fechaNacimiento']}:"></h:outputLabel></td>
                     <td><h:inputText id="fechaNacimiento" required="true" value="#{candidato.fechaNacimiento}">
                             <f:convertDateTime pattern="dd/MM/yyyy"/>
                         </h:inputText>
                     </td>
+                    <td><h:message for="fechaNacimiento"></h:message></td>
                 </tr>
                     
             </table>
             
-            <h:commandButton action="#{vacanteForms.enviar()}" value="Enviar" />
+            <h:commandButton action="#{vacanteForms.enviar()}" value="#{msgs['vacanteForm.enviar']}" />
         </h:form>
     </body>
 </html>
