@@ -41,8 +41,8 @@ public class VacanteForms {
                 FacesMessage faceMessage = new FacesMessage(FacesMessage.SEVERITY_ERROR, msg,msg);
                 FacesContext facesContext = FacesContext.getCurrentInstance();
                 
-                //String componentId = null; //ESte es un mensaje Global
-                //facesContext.addMessage(componentId, faceMessage);
+                String componentId = null; //ESte es un mensaje Global
+                facesContext.addMessage(componentId, faceMessage);
                 return "index";
             }
             log.info("Entrando al caso de exito");

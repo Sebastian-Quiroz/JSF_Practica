@@ -1,0 +1,6 @@
+com\mycompany\holamundojsf\resources\JavaEE8Resource.class
+com\mycompany\holamundojsf\JAXRSConfiguration.class
+beans\configuracion\ConfigurationJSF.class
+beans\backing\VacanteForms.class
+beans\model\Candidato.class
+beans\lifecycle\DebuggerListener.class
