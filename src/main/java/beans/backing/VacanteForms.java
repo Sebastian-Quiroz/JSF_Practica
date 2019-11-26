@@ -70,10 +70,10 @@ public class VacanteForms {
         if ("03810".equals(nuevoCodigoPostal)) {
             
             //leemos el id del FORM de nuestro index 
-            UIInput coloniaInputText = (UIInput) uiViewRoot.findComponent("vacanteForm:colonia");
-            String nuevaColonia = "Napoles";
-            coloniaInputText.setValue(nuevaColonia);
-            coloniaInputText.setSubmittedValue(nuevaColonia);
+            UIInput coloniaIDInputText = (UIInput) uiViewRoot.findComponent("vacanteForm:coloniaID");
+            int nuevaColoniaID = 1;
+            coloniaIDInputText.setValue(nuevaColoniaID);
+            coloniaIDInputText.setSubmittedValue(nuevaColoniaID);
             
             UIInput ciudadInputText = (UIInput) uiViewRoot.findComponent("vacanteForm:ciudad");
             String nuevaCiudad = "Ciudad de Mexico";
