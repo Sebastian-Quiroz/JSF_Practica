@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+Si el css se encuentra en la direccion resources/css 
+            no hay necesidad de agregar la direccion en el nombre, 
+            de lo contrario si
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Proyecto Bolsa de Trabajo</title>
+        
+        <h:outputStylesheet library="css" name="estilos.css"/>
+    </h:head>
+    <h:body>
+        <div id="wrapper">
+            <div id="header-wrapper">
+                <ui:insert name="top">
+                    <div id="header">
+                        <div id="logo">
+                            <h1>Bolsa de Trabajo</h1>
+                        </div>
+                    </div>
+                </ui:insert>
+            </div>
+
+            <div id="page">
+                <ui:insert name="content">
+                    Contenido
+                </ui:insert>
+            </div>
+
+            <div id="footer">
+                <ui:insert name="botoom">
+                    Derechos reservados Sebastian Quiroz
+                </ui:insert>
+            </div>
+        </div>
+    </h:body>
+</html>
