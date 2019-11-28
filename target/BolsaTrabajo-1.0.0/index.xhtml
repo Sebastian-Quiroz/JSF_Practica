@@ -63,7 +63,10 @@ and open the template in the editor.
                 <tr>
                     <td><h:outputLabel for="codigoPostal" value="#{msgs['vacanteForm.codigoPostal']}"></h:outputLabel></td>
                             <td>
-                                <h:inputText id="codigoPostal" immediate="true" onchange="this.form.submit()" required="true" value="#{candidato.codigoPostal}" valueChangeListener="#{vacanteForms.codigoPostalListener}"></h:inputText>
+                                <h:inputText id="codigoPostal" immediate="true" onchange="this.form.submit()" required="true" 
+                                             value="#{candidato.codigoPostal}" valueChangeListener="#{vacanteForms.codigoPostalListener}">
+                                    <f:convertNumber integerOnly="true" pattern="00000"/>
+                                </h:inputText>
                             </td>
                             <td><h:message for="codigoPostal"></h:message></td>
                 </tr>
@@ -72,10 +75,8 @@ and open the template in the editor.
                     <td><h:outputLabel for="coloniaID" value="#{msgs['vacanteForm.coloniaID']}"></h:outputLabel></td>
                             <td>
                                 <h:selectOneMenu id="coloniaID" required="true" value="#{candidato.coloniaID}">
-                                    <f:selectItem itemLabel="#{msgs['vacanteForm.seleccione']}" itemValue=""/>
-                                    <f:selectItem itemLabel="Napoles" itemValue="1"/>
-                                    <f:selectItem itemLabel="Bogota" itemValue="2"/>
-                                    <f:selectItem itemLabel="Mosquera" itemValue="3"/>
+                                    <f:selectItem itemLabel="#{msgs['vacanteForm.seleccione']}" itemValue="" />
+                                    <f:selectItems value="#{coloniaHelper.selectItems}"/>
                                 </h:selectOneMenu>
                             </td>
                             <td><h:message for="coloniaID"></h:message></td>

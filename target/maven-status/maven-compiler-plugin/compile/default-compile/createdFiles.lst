@@ -1,6 +1,8 @@
-com\mycompany\holamundojsf\resources\JavaEE8Resource.class
+beans\helper\ColoniaHelper.class
 com\mycompany\holamundojsf\JAXRSConfiguration.class
-beans\configuracion\ConfigurationJSF.class
+beans\model\Colonia.class
 beans\backing\VacanteForms.class
 beans\model\Candidato.class
 beans\lifecycle\DebuggerListener.class
+com\mycompany\holamundojsf\resources\JavaEE8Resource.class
+beans\configuracion\ConfigurationJSF.class
